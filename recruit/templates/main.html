@@ -1,0 +1,5 @@
+{% if art %}
+    <a href="{% url 'show' %}">지원서 보러가기</a>
+{% else %}
+    <a href="{% url 'new' %}">지원서 작성하기</a>
+{% endif %}
