@@ -19,7 +19,10 @@ from recruit import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.main, name="main"),
+    path('', views.signin, name="signin"),
+    path('signup/', views.signup, name="signup"),
+    path('signout/', views.signout, name="signout"),
+    path('main', views.main, name="main"),
     path('new', views.new, name="new"),
     path('show', views.show, name="show"),
     path('edit', views.edit, name="edit"),
